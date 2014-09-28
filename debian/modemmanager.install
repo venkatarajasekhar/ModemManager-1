@@ -1,0 +1,9 @@
+etc
+lib
+usr/bin
+usr/sbin
+usr/share/dbus-1
+usr/share/icons
+usr/share/man
+usr/share/locale/*/LC_MESSAGES/ModemManager.mo
+usr/lib/*/ModemManager

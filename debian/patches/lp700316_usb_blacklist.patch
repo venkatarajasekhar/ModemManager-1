@@ -1,0 +1,22 @@
+---
+ src/77-mm-usb-device-blacklist.rules |    9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+Index: b/src/77-mm-usb-device-blacklist.rules
+===================================================================
+--- a/src/77-mm-usb-device-blacklist.rules
++++ b/src/77-mm-usb-device-blacklist.rules
+@@ -87,4 +87,13 @@ ATTRS{idVendor}=="1b4f", ATTRS{idProduct
+ # Altair U-Boot device
+ ATTRS{idVendor}=="0216", ATTRS{idProduct}=="0051" ENV{ID_MM_DEVICE_IGNORE}="1"
+ 
++# Prolific Technology, Inc. PL2303 Serial Port
++ATTRS{idVendor}=="067b", ATTRS{idProduct}=="2303", ENV{ID_MM_DEVICE_IGNORE}="1"
++
++# Cygnal Integrated Products, Inc. CP210x
++ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", ENV{ID_MM_DEVICE_IGNORE}="1"
++
++# QinHeng Electronics HL-340
++ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", ENV{ID_MM_DEVICE_IGNORE}="1"
++
+ LABEL="mm_usb_device_blacklist_end"
